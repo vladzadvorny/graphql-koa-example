@@ -1,0 +1,35 @@
+{
+  "name": "graphql-koa-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-inline-import-graphql-ast": "^2.0.4",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.13.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "nodemon": "^1.12.5",
+    "yarn": "^1.3.2"
+  },
+  "dependencies": {
+    "apollo-server-koa": "^1.2.0",
+    "dotenv": "^4.0.0",
+    "faker": "^4.1.0",
+    "graphql": "^0.11.7",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-tools": "^2.12.0",
+    "kcors": "^2.2.1",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.6"
+  }
+}
