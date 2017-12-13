@@ -1,21 +1,24 @@
 type User {
-  _id: ID!
+  id: ID!
   username: String!
   posts: [Post] # the list of Posts by this user
 }
 
 type Post {
-  _id: ID!
+  id: ID!
   title: String
   author: User!
 }
 
 # the schema allows the following query:
 type Query {
+  user(id: ID!): User!
+  me: User!
   posts: [Post]
-  user(_id: ID!): User
 }
 
 # this schema allows the following mutation:
-# type Mutation {
-# }
+type Mutation {
+  signup(username: String!, password: String!): User!
+  signin(username: String!, password: String!): String!
+}

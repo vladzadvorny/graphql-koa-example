@@ -16,3 +16,4 @@ export const databaseConfig = isProduction ? dBproduction : dBdevelopment;
 // Export Server settings
 export const port = process.env.PORT || 3000;
 export const endpointURL = process.env.ENDPOINT_URL || '/graphql';
+export const jwtSecret = process.env.JWT_KEY || 'awesome_secret_key';
