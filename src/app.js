@@ -9,6 +9,7 @@ import depthLimit from 'graphql-depth-limit';
 import { isDevelopment, endpointURL } from './config';
 import typeDefs from './schema.gql';
 import resolvers from './resolvers';
+import loaders from './loaders';
 
 export const schema = makeExecutableSchema({
   typeDefs,
@@ -27,7 +28,10 @@ router.all(
 
     return {
       schema,
-      context: { user },
+      context: {
+        user,
+        loaders: loaders()
+      },
       validationRules: [depthLimit(2)]
     };
   })

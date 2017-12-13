@@ -1,13 +1,11 @@
 {
   "name": "graphql-koa-example",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --exec babel-node src/index.js"
   },
   "devDependencies": {
-    "add": "^2.0.6",
     "babel-cli": "^6.26.0",
     "babel-plugin-inline-import-graphql-ast": "^2.0.4",
     "babel-preset-env": "^1.6.1",
@@ -20,6 +18,8 @@
   },
   "dependencies": {
     "apollo-server-koa": "^1.2.0",
+    "dataloader": "^1.3.0",
+    "dataloader-mongoose": "^0.0.2",
     "dotenv": "^4.0.0",
     "faker": "^4.1.0",
     "graphql": "^0.11.7",
